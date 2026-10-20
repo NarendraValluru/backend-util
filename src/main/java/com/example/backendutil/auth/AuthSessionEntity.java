@@ -1,4 +1,4 @@
-package com.example.backendutil.entity;
+package com.example.backendutil.auth;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
