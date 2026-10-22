@@ -21,6 +21,16 @@ public class AuthUserEntity {
     @Column(nullable = false, unique = true, length = 254)
     private String email;
 
+    @Column(length = 120)
+    private String fullName;
+
+    @Column(unique = true, length = 64)
+    private String resetTokenHash;
+
+    private Instant resetExpiresAt;
+
+    private Instant resetRequestedAt;
+
     @Column(nullable = false)
     private String passwordHash;
 
